@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6eff6;
+    font-family: 'Karla', sans-serif;
+    margin: 4.2rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 5px #A4A9AD;
+}
+
+.section {
+    padding: 1.6rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.joinsection {
+    background-color: #ffffff;
+}
+
+.join-title {
+    color: #3aa395;
+    font-size: 1.3rem;
+}
+.join-sub {
+    color: #bfdf32;
+    font-weight: 700;
+}
+.join-desc {
+    color: #a8abb0;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+.monthlysubsection {
+    background-color: #2bb3b1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.month-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.pricing {
+    font-weight: 400;
+    color: #97eeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p.chiffre {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+p.parmois {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.price-desc {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.8em 6em;
+    background-color: #bfdf32;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    align-self: center;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0px 5px 18px 2px #6d8586;
+
+
+}
+
+strong {
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+
+.whyussection {
+    background-color: #4abebd;
+    color: white;
+}
+
+.why-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.why-reasons {
+    font-size: 0.8rem;
+    margin: 0.5em 0;
+    color: #d6ffff;
+}
+
+@media (max-width: 675px) {
+    br {
+        display: none;
+    }
+    .container {
+        grid-template:
+        auto
+        auto
+        auto
+        / 1fr;
+        max-width: 311px;
+    }
+
+
+}
+
+@media (min-width: 676px) {
+    br {
+        display: inline;
+    }
+
+    .container {
+        grid-template:
+    auto
+    1fr
+    / 1fr 1fr;
+        max-width: 627px;
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
+
+    }
+
+    .section {
+        padding: 2rem;
+    }
+
+    .joinsection {
+        grid-column: span 2;
+    }
+
+button {
+    padding: 0.8em 5em;
+}
+
+}
